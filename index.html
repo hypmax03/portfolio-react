@@ -10,30 +10,53 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 </head>
 
-<body style="background-color: rgb(255, 255, 255)">
+<body style="background-color: rgb(255, 255, 255)" class="m-auto">
   <!--nav--------------------------------------------------------------------------------------------------------------------------------->
-  <nav class="navbar navbar-expand-lg" style="margin-top: 10px">
-    <div class="container-fluid py-2" id="nav-container" style="font-size: 20px">
-      <a class="navbar-brand fw-bold tilt-name" href="#">ManuAnand</a>
-      <div class="mx-auto" id="navbarNav">
-        <ul class="navbar-nav flex-row gap-4">
-          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+  <nav class="navbar navbar-expand-lg bg-white py-2">
+
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold fs-3 mx-3 mt-3" href="#">ManuAnand</a>
+
+      <!-- Toggle Button (Mobile) -->
+      <button class="btn btn-dark navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-lg-4 text-center fs-4">
+
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Me</a>
+            <a class="nav-link" href="#about">About Me</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+
         </ul>
       </div>
-      <div>
-        <button class="btn btn-dark" id="btn-resume">
-          Resume <i class="bi bi-download"></i>
-        </button>
-      </div>
+
+      <!-- Resume Button -->
+      <a href="#" class="btn btn-dark">Resume</a>
+
     </div>
+
   </nav>
   <!-- - ---------------------------------------------------------------------------------------------------------------------------->
 
@@ -56,12 +79,19 @@
         </p>
         <br />
         <!-- SOCIAL ICONS -->
-        <div class="d-flex gap-3 mt-4">
-          <div class="icon-box"><i class="bi bi-github"></i></div>
-          <div class="icon-box"><i class="bi bi-linkedin"></i></div>
-          <div class="icon-box"><i class="bi bi-twitter"></i></div>
-          <div class="icon-box"><i class="bi bi-envelope"></i></div>
-          <div class="icon-box"><i class="bi bi-instagram"></i></div>
+        <div class="d-flex gap-4 mt-4 icon-class">
+          <a href="https://github.com/hypmax03">
+            <div class="icon-box"><i class="bi bi-github"></i></div>
+          </a>
+          <a href="https://www.linkedin.com/in/manu-anand-a-3027b5305/">
+            <div class="icon-box"><i class="bi bi-linkedin"></i></div>
+          </a>
+          <a href="mailto:manuanandam@gmail.com">
+            <div class="icon-box"><i class="bi bi-envelope"></i></div>
+          </a>
+          <a href="https://www.instagram.com/manu_x03/?__pwa=1">
+            <div class="icon-box"><i class="bi bi-instagram"></i></div>
+          </a>
         </div>
       </div>
       <!-- image-about -->
@@ -71,42 +101,32 @@
     </div>
   </section>
   <!-- skill-section -->
-  <section class="container text-center py-5">
-    <h2 class="fw-light">
+  <section class=" text-center py-5 bg-black" id="skills">
+    <h2 class="fw-light text-white">
       What <span class="fw-bold">Skills</span> Do I Have?
     </h2>
 
-    <p class="text-muted mt-3">
+    <p class="text-white fw-light mt-3 ">
       Here are the technologies and tools I’m currently learning and working
       with.
     </p>
 
-    <div class="row g-4 mt-3" style="transform: scale(0.9);">
+    <div class="row g-5 mt-3 justify-content-center" style="transform: scale(0.9);">
       <div class="col-6 col-md-6 col-lg-2">
-        <div class="skill-box text-center">
-          <p>Python</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-6 col-lg-2">
-        <div class="skill-box text-center">
-          <p>C</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-6 col-lg-2">
-        <div class="skill-box text-center">
+        <div class="skill-box text-center  ">
           <i class="bi bi-braces"></i>
           <p>HTML/CSS</p>
         </div>
       </div>
       <div class="col-6 col-md-4 col-lg-2">
-        <div class="skill-box text-center">
+        <div class="skill-box text-center  ">
           <i class="bi bi-bootstrap"></i>
           <p>Bootstrap</p>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-lg-2">
-        <div class="skill-box text-center">
+        <div class="skill-box text-center  ">
           <i class="bi bi-code-slash"></i>
           <p>React (Learning)</p>
         </div>
@@ -117,6 +137,178 @@
           <i class="bi bi-server"></i>
           <p>Node.js</p>
         </div>
+  </section>
+  <!-- About -------------------------------------------------------------------------------------------------------------------------->
+  <section class="container py-5" id="about">
+    <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+
+      <!-- Image -->
+      <div class="text-center" style="flex: 0 0 40%;">
+        <img src="/img/photo2.png" class="img-fluid" style="max-height: 400px; object-fit: contain;">
+      </div>
+
+      <!-- Content -->
+      <div class="flex-fill">
+        <h1 class="fw-bold">About <span class="text-outline">Me</span></h1>
+        <p class="text-muted mt-3">Full stack developer specializing in the MERN stack, focused on building scalable and
+          high-performance web
+          applications. I have a strong interest in developing clean, efficient backend systems and intuitive user
+          interfaces, combining both functionality and user experience.
+
+          With a background in computer engineering, I have developed a solid understanding of core programming concepts
+          and practical development through internships and real-world projects. I am currently expanding my expertise
+          with modern tools and frameworks like Next.js while continuously refining my problem-solving and development
+          skills.
+
+          Driven by curiosity and growth, I am committed to learning new technologies and building impactful digital
+          solutions. </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- project ------------------------------------------------------------------------------------------------------------------------------>
+  <section class="  py-5 bg-black" id="project">
+
+    <div class="container">
+      <div class="row align-items-center mb-5 ">
+
+        <!-- Left: Image -->
+        <div class="col-md-5">
+          <div style="height: 300px; overflow: hidden;">
+            <img src="/img/Gemini_Generated_Image_l76tdhl76tdhl76t.png" class="w-100 h-100 object-fit-cover rounded">
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="col-md-7 ">
+          <h1 class="text-white">01</h1>
+          <h3 class="fw-bold text-white">Local Shop Marketing </h3>
+
+          <p class="text-white">
+            Developed a web platform to promote local shops and improve visibility.
+            Designed responsive UI and structured layout for better user experience.
+          </p>
+
+          <p>
+            <span class="badge bg-dark">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-dark">Bootstrap</span>
+            <span class="badge bg-secondary">PyCharm</span>
+            <span class="badge bg-dark">MySQL</span>
+
+
+          </p>
+
+        </div>
+
+      </div><br><br>
+
+      <div class="row align-items-center mb-5">
+
+
+
+        <!-- Right: Content -->
+        <div class="col-md-7 p-5 ">
+          <h1 class="text-white">02</h1>
+          <h3 class="text-white fw-bold">Personal Portfolio Website</h3>
+
+          <p class="text-white">
+            Designed and developed a responsive personal portfolio to showcase my
+            skills, projects, and development journey. Focused on clean UI,
+            structured layout, and user-friendly design.
+          </p>
+
+          <ul class="text-white">
+            <li>Responsive design using Bootstrap</li>
+            <li>Structured project and skills sections</li>
+            <li>Optimized layout for different screen sizes</li>
+            <li>Continuously updated with new technologies</li>
+          </ul>
+
+          <p>
+            <span class="badge bg-dark">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-dark">Bootstrap</span>
+          </p>
+
+        </div>
+        <!-- Left: Image -->
+        <div class="col-md-5 p-5">
+          <div style="height: 300px; overflow: hidden;">
+            <img src="/img/Screenshot 2026-04-16 223213.png" class="w-100 h-100 object-fit-cover rounded">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- contact-me ----------------------------------------------------------------------------------------------------------------------->
+  <section class="py-5" id="contact">
+
+    <div class="container" id="contact-me">
+
+      <!-- Heading -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Get In <span class="text-outline">Touch</span></h2>
+        <p class="text-muted">
+          Have a project in mind or want to connect? Feel free to reach out.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Left: Contact Info -->
+        <div class="col-md-5">
+          <h5>Contact Info</h5>
+
+          <p><i class="bi bi-envelope"></i> manuanandam@gmail.com</p>
+          <p><i class="bi bi-telephone"></i> +91 8129330074</p>
+          <p><i class="bi bi-geo-alt"></i> Calicut, India</p>
+
+          <!-- Social Icons -->
+          <div class="d-flex gap-4 mt-4 icon-class">
+            <a href="https://github.com/hypmax03">
+              <div class="contact-icon"><i class="bi bi-github"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/manu-anand-a-3027b5305/">
+              <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+            </a>
+            <a href="mailto:manuanandam@gmail.com">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+            </a>
+            <a href="https://www.instagram.com/manu_x03/?__pwa=1">
+              <div class="contact-icon"><i class="bi bi-instagram"></i></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="col-md-7">
+          <form>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+
+            <button class="btn btn-dark" id="send-btn">Send Message</button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+    </div>
   </section>
 </body>
 
