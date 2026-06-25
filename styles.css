@@ -162,3 +162,398 @@ html {
     color: black;
     border: 1px solid black;
 }
+/* ===========================
+   MODERN BACKGROUND
+=========================== */
+
+body {
+    background: linear-gradient(
+        -45deg,
+        #ffffff,
+        #f2f2f2,
+        #e8e8e8,
+        #ffffff
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    overflow-x: hidden;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Floating circles background */
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+body::before {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.08);
+    top: -50px;
+    left: -50px;
+}
+
+body::after {
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.05);
+    bottom: -50px;
+    right: -50px;
+}
+
+/* ===========================
+   GLASS NAVBAR
+=========================== */
+
+.navbar {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.8) !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* ===========================
+   HERO IMAGE FLOAT
+=========================== */
+
+#intro-sec img {
+    max-width: 100%;
+    height: auto;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ===========================
+   MODERN BUTTONS
+=========================== */
+
+.btn-dark {
+    border-radius: 12px;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   SKILL CARDS
+=========================== */
+
+.skill-box {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.icon-box,
+.contact-icon {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.icon-box:hover,
+.contact-icon:hover {
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* ===========================
+   PROJECT IMAGES
+=========================== */
+
+#project img {
+    transition: 0.4s;
+}
+
+#project img:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .icon-box {
+        width: 65px;
+        height: 65px;
+    }
+
+    .icon-box i {
+        transform: scale(1.5);
+    }
+
+    .skill-box:hover {
+        transform: scale(1.05);
+    }
+
+    #intro-sec {
+        text-align: center;
+    }
+
+    #intro-sec .d-flex {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+
+    .icon-box {
+        width: 55px;
+        height: 55px;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .skill-box {
+        padding: 20px 10px;
+    }
+
+    .skill-box:hover {
+        transform: none;
+    }
+
+    .icon-box:hover {
+        transform: scale(1.1);
+    }
+
+    .navbar-nav {
+        gap: 10px !important;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-box i {
+        transform: scale(1.2);
+    }
+
+    .contact-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .btn-dark {
+        width: 100%;
+    }
+
+    .navbar .btn-dark {
+        width: auto;
+    }
+}
+*{
+    font-family:'Poppins',sans-serif;
+}
+
+.hero-img{
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* Animated background */
+
+.bg-animation{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.bg-animation span{
+    position:absolute;
+    display:block;
+    border-radius:50%;
+    background:rgba(0,0,0,0.05);
+    animation: animate 20s linear infinite;
+}
+
+.bg-animation span:nth-child(1){
+    width:150px;
+    height:150px;
+    left:10%;
+    animation-duration:18s;
+}
+
+.bg-animation span:nth-child(2){
+    width:80px;
+    height:80px;
+    left:25%;
+    animation-duration:15s;
+}
+
+.bg-animation span:nth-child(3){
+    width:120px;
+    height:120px;
+    left:50%;
+    animation-duration:20s;
+}
+
+.bg-animation span:nth-child(4){
+    width:70px;
+    height:70px;
+    left:70%;
+    animation-duration:17s;
+}
+
+.bg-animation span:nth-child(5){
+    width:200px;
+    height:200px;
+    left:85%;
+    animation-duration:25s;
+}
+
+@keyframes animate{
+    0%{
+        transform:translateY(100vh) rotate(0deg);
+    }
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+    }
+}
+
+.navbar{
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+#project img{
+    transition:.4s;
+}
+
+#project img:hover{
+    transform:scale(1.05);
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.5rem;
+    }
+
+    .icon-box{
+        width:55px;
+        height:55px;
+    }
+
+    .icon-box i{
+        transform:scale(1.4);
+    }
+
+    .skill-box:hover{
+        transform:none;
+    }
+
+    #intro-sec{
+        text-align:center;
+    }
+
+    .icon-class{
+        justify-content:center;
+    }
+}
+
+@media(max-width:576px){
+
+    h1{
+        font-size:1.7rem;
+    }
+
+    p{
+        font-size:0.95rem;
+    }
+
+    .hero-img{
+        margin-top:30px;
+    }
+}
