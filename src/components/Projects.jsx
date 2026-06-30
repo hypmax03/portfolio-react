@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="md:flex md:items-center md:gap-8 mb-12">
           <div className="md:w-5/12 overflow-hidden rounded-lg">
-            <motion.img src="/img/Gemini_Generated_Image_l76tdhl76tdhl76t.png" className="w-full h-72 object-cover rounded-lg" whileHover={{ scale: 1.06 }} transition={{ duration: 0.5 }} alt="project-1" />
+            <motion.img src="/LocalshopImg.png" className="w-full h-72 object-cover rounded-lg" whileHover={{ scale: 1.06 }} transition={{ duration: 0.5 }} alt="project-1" />
           </div>
           <div className="md:w-7/12 mt-6 md:mt-0">
             <h1 className="text-xl">01</h1>
@@ -35,7 +35,7 @@ export default function Projects() {
           </div>
           <div className="md:w-5/12 mt-6 md:mt-0">
             <div className="overflow-hidden rounded-lg">
-              <motion.img src="/img/Screenshot 2026-04-16 223213.png" className="w-full h-72 object-cover rounded-lg" whileHover={{ scale: 1.06 }} transition={{ duration: 0.5 }} alt="project-2" />
+              <motion.img src="/PortfolioIMG.png" className="w-full h-72 object-cover rounded-lg" whileHover={{ scale: 1.06 }} transition={{ duration: 0.5 }} alt="project-2" />
             </div>
           </div>
         </div>

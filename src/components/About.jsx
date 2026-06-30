@@ -5,7 +5,7 @@ export default function About() {
     <section className="py-12">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
         <div className="flex-0 w-full md:w-2/5 text-center">
-          <img src="/cropped_circle_image.png" className="mx-auto rounded-2xl max-h-96 object-contain" alt="profile" />
+          <img src="/Myimage.png" className="mx-auto rounded-2xl max-h-96 object-contain" alt="profile" />
         </div>
         <div className="flex-1">
           <h1 className="text-3xl font-bold">About <span className="text-outline">Me</span></h1>
