@@ -1,0 +1,24 @@
+import React from 'react'
+import Navbar from './components/Navbar'
+import Intro from './components/Intro'
+import Skills from './components/Skills'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
+export default function App() {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <div id="intro-sec"><Intro /></div>
+        <div id="skills"><Skills /></div>
+        <div id="about"><About /></div>
+        <div id="project"><Projects /></div>
+        <div id="contact"><Contact /></div>
+      </main>
+      <Footer />
+    </>
+  )
+}
